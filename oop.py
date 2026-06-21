@@ -56,8 +56,29 @@ class School :
         self.school_name = name
 
 
-s1 = School("Sujon School")
-s2 = School("Sujon School")
+s1 = School("Sujon  name School")
 
-print(s1.school_name)
-print(s2.school_name)
+# print(s1.school_name)
+
+class Employee:
+
+    name = "Sujon Mia"
+    age = 22
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+    
+    @classmethod
+
+    def ChangeName_age(cls, name, age):
+        cls.name = name
+        cls.age = age
+e1 = Employee("Sujon Mia", 22)
+e2 = Employee("Sujon Mia", 29)
+Employee.display(e2)
+e1.ChangeName_age("Sujon Mia", 24)
